@@ -1,8 +1,8 @@
-# Fire Segmentation using YOLOv8 and Image Processing
+# Fire Segmentation using YOLOv8 and Image Processing Techniques
 
 ## Introduction
 
-This project is a part of the course "Computer Vision" at Universitas Gadjah Mada. The goal of this project is to segment the image into 2 class, fire and non fire, in images using the YOLOv8 object detection algorithm and image processing techniques. The segmentation are done by using the YOLOv8 algorithm to detect the fire and the image processing techniques to segment the fire pixel from the image.
+The goal of this project is to segment the image into 2 class, fire and non fire, in images using the YOLOv8 object detection algorithm and image processing techniques. The segmentation are done by using the YOLOv8 algorithm to detect the fire and the image processing techniques to segment the fire pixel from the image.
 
 ## Dataset
 
@@ -38,10 +38,10 @@ The segmentation are done purely using image processing techniques. The segmenta
 5. Combine the result of `combined_img` and `combined_low_light_img` using bitwise AND, called as `ultimate_combined`.
 6. Combine the result of RGB rules between the original and low light enhanced image using bitwise OR, called as `rgb_combined`.
 7. Compare the similarity for each pixel between `ultimate_combined` and `rgb_combined`, if the overall similarity is above 0.75, then use `rgb_combined` as the final result, otherwise use `ultimate_combined` as the final result. Here are the example for both low similarity percentage and high similarity percentage:
-   1. Low similarity percentage:
-      ![Low Similarity Percentage](./output/low_percentage.png)
-   2. High similarity percentage:
-      ![High Similarity Percentage](./output/high_percentage.png)
+
+|                 Low Similarity Percentage                 |                 High Similarity Percentage                  |
+| :-------------------------------------------------------: | :---------------------------------------------------------: |
+| ![Low Similarity Percentage](./output/low_percentage.png) | ![High Similarity Percentage](./output/high_percentage.png) |
 
 Note: The similarity threshold is determined by visual inspection of some sample images.
 
