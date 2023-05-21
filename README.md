@@ -43,6 +43,8 @@ The segmentation are done purely using image processing techniques. The segmenta
 | :-------------------------------------------------------: | :---------------------------------------------------------: |
 | ![Low Similarity Percentage](./output/low_percentage.png) | ![High Similarity Percentage](./output/high_percentage.png) |
 
+8. Apply morphological operation (closing and dilatation) to the final result with a 4x4 kernel.
+
 Note: The similarity threshold is determined by visual inspection of some sample images.
 
 ## Result
