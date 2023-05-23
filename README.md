@@ -29,7 +29,6 @@ The segmentation are done purely using image processing techniques. The segmenta
    1. `R > G > B`
    2. `R > 190` and `G > 90` and `B < 140`
    3. `0.1 <= (G / (R+1)) <= 1` and `0.1 <= (B / (R+1)) <= 0.85` and `0.1 <= (B / (G+1)) <= 0.85`
-   4. Apply morphological closing to the image with a 3x3 kernel.
 3. Apply YCbCr rules to both the original and low light enhanced image to get the fire pixel. The rules are:
    1. `Y < 145` or `Y >= 170`
    2. `50 <= Cb <= 120`
